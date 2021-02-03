@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Staatliches&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>DOCTYPE</title>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="images/doctype_logo.svg">
+  </div>
+
+  <script>
+		window.addEventListener('load', (event) => {
+			document.getElementById('nav-member').addEventListener('click', () => {
+				var contact = document.getElementById('member');
+				var content_position = contact.getBoundingClientRect();
+				window.scrollTo( 0, content_position.top);
+      });
+      document.getElementById('nav-skill').addEventListener('click', () => {
+				var contact = document.getElementById('skill');
+				var content_position = contact.getBoundingClientRect();
+				window.scrollTo( 0, content_position.top);
+      });
+      document.getElementById('nav-contact').addEventListener('click', () => {
+				var contact = document.getElementById('contact');
+				var content_position = contact.getBoundingClientRect();
+				window.scrollTo( 0, content_position.top);
+			});
+		});
+  </script>
+
+  <div class="nav">
+    <img src="images/icon_member.svg" class="nav-item" id="nav-member">
+    <img src="images/icon_skill.svg" class="nav-item" id="nav-skill">
+    <img src="images/icon_contact.svg" class="nav-item" id="nav-contact">
+  </div>
+
+  <div class="mein-img">
+    <img src="images/shutterstock_583565359.jpg" width="100%" height="400" class="mein-img">
+  </div>
+
+  <div class="main-text">
+    <h1>世界にひとつだけのWEBサイト作ります</h1>
+    <p>
+      私たちはDOCTYPE(ドックタイプ)というWeb制作チームです。<br>
+      プログラミングスクールで出会った、やる気溢れる3人で<br>
+      日々それぞれの技術を磨きながらweb制作をしています。<br>
+      ひとつひとつ想いを込めて、丁寧なサイト作りを心がけています。
+    </p>
+  </div>
+
+  <div class="member" id="member">
+    <div class="title"><img src="images/icon_member.svg" height="25"></div>
+    <div class="members">
+      <div class="member-item">
+        <div class="member-img"><img src="images/img_ryo.svg" width="220"></div>
+        <div class="member-name"><img src="images/icon_ryo.svg" height="35"></div>
+      </div>
+      <div class="member-item">
+        <div class="member-img"><img src="images/img_akito.svg" width="220"></div>
+        <div class="member-name"><img src="images/icon_akito.svg" height="35"></div>
+      </div>
+      <div class="member-item">
+        <div class="member-img"><img src="images/img_ena.svg" width="220"></div>
+        <div class="member-name"><img src="images/icon_ena.svg" height="35"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill" id="skill">
+    <div class="title"><img src="images/icon_skill.svg" height="25"></div>
+      <div class="skill-img">
+        <div class="skill-icon"><img src="images/icon_illustration.svg" width="200"></div>
+        <h1>Desig<br>Coding</h1>
+      </div>
+    <p>
+      Webサイトの企画・設計・デザイン・コーディングを行っています。<br>
+      デザインからコーディングまでを一貫して行います。
+    </p>
+
+    <div class="skill-item">
+      <h3>フロントエンド</h3>
+      <p>HTML / CSS / SCSS / JavaScript</p>
+      <h3>バックエンド</h3>
+      <p>Ruby / Ruby on Rails</p>
+      <h3>デザインツール</h3>
+      <p>Photoshop / Illustrator / InDesign</p>
+    </div>
+
+  </div>
+<!-- 
+  <div class="work">
+    <div class="title"><img src="images/icon_work_line.svg" width="80%"></div>
+  </div> -->
+
+  <div class="contact" id="contact">
+    <div class="title"><img src="images/icon_contact.svg" height="25"></div>
+    <p>ご興味を持って頂き誠にありがとうございます。<br>
+      お見積り、ご依頼、ご質問など、お気軽にお問い合わせください。<br>
+      各種SNSのDMにて受け付けております。
+    </p>
+    <div class="sns">
+      <div class="sns-icon">
+        <a href="https://twitter.com/doctype_dev">
+          <img src="images/twitter.svg" height="40" class="sns-twitter">
+        </a>
+      </div>
+      <div class="sns-icon">
+        <a href="https://www.instagram.com/doctype.dev/">
+          <img src="images/Instagram.svg" height="35" class="sns-instagram">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2021 DOCTYPE</p>
+  </footer>
+
+</body>
+</html>
